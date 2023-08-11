@@ -260,10 +260,40 @@ do{
   let myAray=['jhon','ram','rajan']
     for(let i = 0;i < myAray.length; i++){
     document.write(myAray[i]+"<br>") //anser 'jhon' 'ram' 'rajan'
+      }
    --------------
+    for method-2:-
+    for (let x in myAray){
+    document.write(x + '<br>');
+    document.write ('arry-2',myAray[x] +'<br>') ;//anser  'jhon' 'ram' 'rajan'
+```}
+---------------------------------------------------------------------------------------------
+      events:-
+      in html page:-
+          <button onclick="onAlert()">Click</button>
+      in js page:-
+      function onAlert(){
+     alert('on click alert....')
+
+      }
+      ---------------
+      events-2:-
+    in html page:-
+     <button id="btn">Click</button>
+      in js:-
+      let btn = document.getElementById('btn');
+
+    addEventListener('click',function(){
+    alert('click..2');
+    })
+      -------------
+
       
 
-}
+
+
+
+
 
 
 
