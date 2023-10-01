@@ -26,3 +26,76 @@ console.log(__dirname);
 see path:-
 const path=require('path');
 console.log(path)
+------------------------------------------------------------------------------------------------
+                        ----for css-------
+/* html name:forCss.html */
+
+button:hover{
+    background-color: rgb(88, 9, 216);
+    border: 3px solid black;
+    padding: 10px;
+}
+h2:hover{
+    font-size: 30px;
+    color: red;
+}
+input:focus{
+    background-color:silver;
+    border-color: 1px solid red;
+
+}
+/* allso use p:first-child
+p:nth-child(2)
+P:nth-chile(odd)
+p:nth-child(even)
+
+ */
+div p:nth-child(even){
+    background-color: green;
+    color: white;
+    padding: 15px;
+
+}
+h2::first-letter{
+    /* first letter is yellow */
+    color: yellow;
+    font-size: 30px;
+}
+p::selection{
+    /* draging color is yellow */
+    background-color: yellow;
+}
+h3::before{
+    /* allso use afer eg:- h3::after{} */
+    content: "hello";
+}
+-------------------
+in forCss.html:-
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+        <link href="css/forcss.css" rel="stylesheet" />
+
+    </head>
+    <body>
+        <button>submit</button>
+        <h2>welcome css</h2>
+        <input type="text" name="">
+        <!-- first and chiild sudo class -->
+        <div>
+            <p>first</p>
+            <p>second</p>
+            <p>thirt</p>
+            <p>forth</p>
+            <p>sixth</p>
+            <p>seventh</p>
+            <h3>welcome</h3>
+
+        </div>
+    </body>
+</html>
